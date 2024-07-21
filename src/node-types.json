@@ -20,16 +20,10 @@
   },
   {
     "type": "markdown_block",
-    "named": true,
-    "fields": {}
+    "named": true
   },
   {
     "type": "title",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "\n",
-    "named": false
+    "named": true
   }
 ]

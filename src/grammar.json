@@ -13,39 +13,6 @@
           "name": "markdown_block"
         }
       ]
-    },
-    "title": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "_line"
-        },
-        {
-          "type": "STRING",
-          "value": "\n"
-        }
-      ]
-    },
-    "markdown_block": {
-      "type": "REPEAT1",
-      "content": {
-        "type": "SEQ",
-        "members": [
-          {
-            "type": "SYMBOL",
-            "name": "_line"
-          },
-          {
-            "type": "STRING",
-            "value": "\n"
-          }
-        ]
-      }
-    },
-    "_line": {
-      "type": "PATTERN",
-      "value": "[^\\r\\n]*"
     }
   },
   "extras": [
@@ -56,7 +23,16 @@
   ],
   "conflicts": [],
   "precedences": [],
-  "externals": [],
+  "externals": [
+    {
+      "type": "SYMBOL",
+      "name": "title"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "markdown_block"
+    }
+  ],
   "inline": [],
   "supertypes": []
 }
